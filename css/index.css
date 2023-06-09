@@ -1,0 +1,160 @@
+/* GENERAL STYLING */
+#home {
+  background: url(../images/e.mp4) fixed no-repeat 50% 50%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: auto;
+  display: block;
+  margin-top: 75px;
+  color: #fff;
+  z-index: -1;
+  text-align: center;
+}
+body {
+  overflow: hidden;
+}
+p,
+h1,
+label {
+  font-family: "Kalam", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 20px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  color: #ffffff;
+}
+/* HOMEPAGE IMAGE */
+img {
+  border-radius: 50%;
+}
+#imgmover {
+  display: flex;
+  justify-content: center;
+  padding-top: 13.5rem;
+  padding-right: 0.2rem;
+  z-index: -1;
+}
+
+/* VIDEO BACKGROUND */
+#animation_background {
+  filter: grayscale(30%);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  z-index: -1;
+}
+/* Texts over the video */
+.Video_Text {
+  background: rgba(255, 255, 255, 0);
+  color: white;
+  width: 100%;
+  height: 100vh;
+  padding-top: 2vh;
+  position: relative;
+  -webkit-animation: moveVideoText 5.75s;
+  animation: moveVideoText 5.75s;
+}
+/* NAVBAR STYLING */
+.sidenav {
+  height: 100%;
+  width: 170px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #e75480;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+/* The navigation menu links */
+.sidenav a {
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  font-family: "Kalam", sans-serif;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #2e57af;
+}
+/* Style page content */
+.main {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
+
+
+/* CONTACT FORM */
+
+/* Styling for the contact form */
+.form-popup {
+  z-index: 8; /* This z-index ensures the contact form shows above all other elements on the page */
+  display: none;
+  position: fixed;
+  top: 0.5vw;
+  right: 0.5vw;
+  width: 550px;
+  height: 700px;
+}
+
+/*Form Styling*/
+.form-container {
+  max-width: 49vw; /*Relative sizing of the form container (49% of the viewpoint width)*/
+  padding: 1vw;
+  background-color: #ebb738;
+}
+
+/*Input fields*/
+.form-container input[type="text"] {
+  width: 100%;
+  padding: 0.93vw;
+  margin: 0.6vw 0 0.6vw 0;
+  box-sizing: border-box;
+  background: #91a6cd;
+  font-size: 1vw;
+  font-family: "Kalam", sans-serif;
+}
+
+/*General styling for all the buttons*/
+button {
+  font-family: "Kalam", sans-serif;
+  font-size: 1vw;
+  font-weight: bold;
+  padding: 1.5vw;
+  cursor: pointer;
+  width: 25%;
+  height: 40px;
+  background-color: #2e57af;
+  text-align: center;
+}
+
+/*Hover effect for contact and submit buttons*/
+button:hover,
+.form-container .btn:hover {
+  color: #ffffff;
+  background-color: #e75480;
+  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  border-color: #ffffff98;
+}
+/*Submit Button*/
+.form-container.btn {
+  background-color: #ffffff;
+  color: #d4e4ff;
+  border-color: #d4e4ff;
+  margin-bottom: 1vh;
+}
+/*Close button*/
+.form-container.cancel {
+  background-color: #ffffff;
+  color: #d4e4ff;
+  border-color: #d4e4ff;
+}
+

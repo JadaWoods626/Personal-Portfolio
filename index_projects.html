@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width"/>
     <title><JadaWoods626.github.io></title>
-    <link rel="stylesheet" type="text/css" href="./css/a.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/projects.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee">
     <link rel="shortcut icon" type="img/jpg" href="./images/thumb/logo.jpg">
@@ -17,13 +17,10 @@
   <!--NavBar-->
   <div class="sidenav">
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <a href="index_contact.html">Contact</a>
     <a href="#resume.html">Resume</a>
   </div>
  
-
-  
   <!--Background Video-->
   <div id="Home">
     <video autoplay muted loop id="animation_background">
@@ -33,8 +30,55 @@
     </video>
   </div>
 
+    <!--Slideshow section-->
+    <div id="Slideshow">
+      <div id="Slideshow_Container">
+       
+         <!--Slide 1-->
+         <div  class="mySlides fade">
+          <img class="Slideshow_Images" src="./images/thumb/tiktactoe-screenshot.png" alt="TIK TAC TOE">
+          <div class="text">This project was made with HTML, CSS, and Javascript.</div>
+        </div>
+         <!--Slide 2-->
+         <div  class="mySlides fade">
+          <img class="Slideshow_Images" src="./images/thumb/calculator-screenshot.png" alt="CALCULATOR">
+          <div class="text">This project was made with HTML, CSS, and Javascript.</div>
+        </div>
+         <!--Slide 3-->
+         <div  class="mySlides fade">
+          <img class="Slideshow_Images" src="./images/thumb/sushiroll-screenshot.png" alt="SUSHIROLL" >
+          <div class="text">This project was made with Bootstrap and Javascript.</div>
+        </div>
+         <!--Slide 4
+         <div  class="mySlides fade">
+          <img class="Slideshow_Images" src="./images/thumb/22Anime-screenshot.png" alt="SQL" >
+          <div class="text">SQL,</div>
+        </div>
+         Slide 5
+         <div  class="mySlides fade">
+          <img class="Slideshow_Images" src="./images/thumb/22Anime-screenshot.png" alt="C#">
+          <div class="text">and C#.</div>
+        </div>
+         Slide 6
+         <div  class="mySlides fade">
+          <img class="Slideshow_Images" src="./images/thumb/photoshop1.jpg" alt="Graphic design materials">
+          <div class="text">Contact me now!</div>
+        </div>
+        Previous and next buttons-->
+        <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+        <br> <!--space between slideshow and and dots-->
+      </div>
+    </div>
+      <div style="text-align: center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <!--<span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>-->
+    </div>
 
-
-  <script src="./js/a.js"></script>
+  <script src="./js/project.js"></script>
   </body>
 </html>

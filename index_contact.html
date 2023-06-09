@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width"/>
     <title><JadaWoods626.github.io></title>
-    <link rel="stylesheet" type="text/css" href="./css/a.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/contact.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee">
     <link rel="shortcut icon" type="img/jpg" href="./images/thumb/logo.jpg">
@@ -17,12 +17,9 @@
   <!--NavBar-->
   <div class="sidenav">
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
+    <a href="index_projects.html">Projects</a>
     <a href="#resume.html">Resume</a>
   </div>
-
-
 
   <!--Background Video-->
   <div id="Home">
@@ -32,15 +29,38 @@
       Your browser does not support HTML5 video.
     </video>
   </div>
-  <!--Video Text-->
-  <div class="Video_Text">
-    <strong>
-        <br><br><h1>Hello, I'm Jada,</h1> 
-        <p>welcome to my porfolio!</p>
-        <p>On it, I will tell you a bit about myself and my experiences.</p> 
-       <p> Thank you for stopping by and enjoy!</p>
-    </strong>
-  </div>
-  <script src="./js/a.js"></script>
+
+<!--Contact Form-->
+
+<div class="container">
+  
+  <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form">
+
+    <div class="contact">
+      <label for="label">First & Last Name*</label>
+      <input type="text" class="label" placeholder=""/>
+    </div>
+
+    <div class="contact">
+      <label for="label">Email Address*</label>
+      <input type="text" class="label" placeholder=""/>
+    </div>
+
+    <div class="contact">
+      <label for="label">Subject*</label>
+      <input type="text" class="label" placeholder=""/>
+    </div>
+
+    <div class="contact">
+      <label for="label">Message*</label>
+      <input id="messagebox" type="text" class="label" placeholder=""/>
+    </div>
+
+    <button type="submit" class="submit">SUBMIT</button>
+
+  </form>
+</div>
+
+  <script src="./js/contact.js"></script>
   </body>
 </html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width"/>
     <title><JadaWoods626.github.io></title>
-    <link rel="stylesheet" type="text/css" href="./css/a.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/index.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee">
     <link rel="shortcut icon" type="img/jpg" href="./images/thumb/logo.jpg">
@@ -17,7 +17,6 @@
   <!--NavBar-->
   <div class="sidenav">
     <a href="index.html">Home</a>
-    <a href="index_about.html">About</a>
     <a href="index_contact.html">Contact</a>
     <a href="index_projects.html">Projects</a>
     <a href="resume.html">Resume</a>
@@ -26,6 +25,29 @@
   <div class="in-out" id="imgmover">
   <img src="./images/thumb/photoshop_jada.jpg" width="400" height="400">
  </div>
+ <!--Animation-->
+
+ <!--Contact Form-->
+ <div id="Contact">
+  <div class="form-popup" id="myForm">
+  <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+<!--We are using https://formspree.io/ to send our contact form to an email address of our choosing-->
+<h1>Contact</h1>
+    <label>Name:</label>
+    <input type="text" placeholder="Please enter your name here">
+    <label>Phone:</label>
+    <input type="text" placeholder="Please enter your phone number here">
+    <label>Email:</label>
+    <input type="text" name="Email" placeholder="Please enter email here">
+    <label>Message:</label>
+    <input type="text" name="Message" placeholder="Please enter your message here">
+
+    <button type="submit" class="btn">SUBMIT</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+  </form>
+</div>
+</div>
+
   <!--Background Video-->
   <div id="Home">
     <video autoplay muted loop id="animation_background">
@@ -33,6 +55,10 @@
       <!--Message if video doesn't play-->
       Your browser does not support HTML5 video.
     </video>
+  </div>
+
+  <div>
+
   </div>
   <!--Video Text-->
   <div class="Video_Text">
@@ -43,6 +69,6 @@
        <p> Thank you for stopping by and enjoy!</p>
     </strong>
   </div>
-  <script src="./js/a.js"></script>
+  <script src="./js/contact.js"></script>
   </body>
 </html>
